@@ -1,0 +1,30 @@
+.grid1 {
+    font-size: 48px;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.grid1-element {
+    border-style: solid;
+    border-color: black;
+    display: grid;
+    row-gap: 40px;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+.grid2 {
+    font-size: 48px;
+
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.grid2-element {
+    border-style: solid;
+    border-color: black;
+    display: grid;
+    row-gap: 40px;
+    column-gap: 100px;
+    justify-content: right;
+    justify-items: left;
+}

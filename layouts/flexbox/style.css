@@ -1,0 +1,35 @@
+.flexbox1 {
+    font-size: 48px;
+
+    display: flex;
+    flex-direction: column;
+}
+.flexbox1-element {
+    border-style: solid;
+    border-color: black;
+}
+
+.flexbox2 {
+    font-size: 48px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+.flexbox2-element {
+    border-style: solid;
+    border-color: black;
+}
+
+.flexbox3 {
+    font-size: 48px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    flex-wrap: wrap;
+}
+.flexbox3-element {
+    border-style: solid;
+    border-color: black;
+}

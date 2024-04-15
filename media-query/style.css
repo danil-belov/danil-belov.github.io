@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+.left-tab {
+    width: 100%;
+    float: left;
+    border-style: solid;
+    border-color: black;
+}
+
+.right-tab {
+    width: 100%;
+    float: left;
+    border-style: solid;
+    border-color: black;
+}
+
+.main {
+    width: 100%;
+    float: left;
+    border-style: solid;
+    border-color: black;
+}
+
+picture {
+    width: 100%;
+    height: auto;
+    min-width: 200px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-style: solid;
+    border-color: black;
+}
+
+/* tablet screens */
+@media screen and (min-width: 600px) {
+    .left-tab {
+        width: 25%;
+        float: left;
+    }
+    
+    .right-tab {
+        width: 100%;
+        float: left;
+    }
+    
+    .main {
+        width: 100%;
+        float: left;
+    }
+}
+
+/* desktop screens */
+@media screen and (min-width: 768px) {
+    .left-tab {
+        width: 25%;
+        float: left;
+    }
+    
+    .right-tab {
+        width: 25%;
+        float: right;
+    }
+    
+    .main {
+        width: 50%;
+        float: left;
+    }
+}

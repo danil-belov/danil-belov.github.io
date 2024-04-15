@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Media Query Tryouts</title>
+</head>
+
+<body>
+    <div class="left-tab">
+        <p>Left Tab:<br>some text...</p>
+    </div>
+    <div class="right-tab">
+        <p>Right Tab:<br>some text...</p>
+    </div>
+    <div class="main">
+        <p>Main Section:<br>some text...</p>
+        <picture>
+            <source srcset="big_image.png" media="(min-width: 768px)">
+            <source srcset="medium_image.png" media="(min-width: 600px)">
+            <img src="small_image.png" alt="Some image">
+        </picture>
+    </div>
+    
+</body>
+
+</html>

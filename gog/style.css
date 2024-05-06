@@ -5,6 +5,7 @@ html, body {
 * {
   box-sizing: border-box;
   /* font-size: 1vw; */
+  font-family: Arial, Helvetica, sans-serif;
 }
   
 nav {
@@ -47,15 +48,20 @@ nav {
   max-height: 176px;
   float: left;
 
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+
   display: block;
   font-size: clamp(1rem, 3.6vw, 2rem);
   white-space: nowrap;
   text-align: center;
+  text-decoration: none;
   color: white;
 }
 
-
-.nav-button:hover {
+.nav-button:hover, .nav-button:focus {
   background-color: darkgrey;
   color:white;
 }
@@ -66,13 +72,13 @@ nav {
 }
 
 section {
-  margin-top: 160px;
+  margin-top: 240px;
   display: block;
 }
 
 p {
   display: block;
-  /* font-size: 2.4vw; */
+  font-size: 1.4rem;
   color: black;
 }
 
@@ -82,28 +88,57 @@ picture {
   min-width: 200px;
 }
 
+.emphasis {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
 .products-container {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: stretch;
+  gap: 40px 20px; 
 }
 
 .product {
-  width: 75vw;
-  height: 75vw;
+  width: 80%;
+  height: max-content;
   background-color: lightblue;
+  text-decoration: none;
+}
+
+.product:hover, .product:focus {
+  transition: 100ms ease;
+  transform: translate(0, -16px);
 }
 
 .product-name {
   text-align: center;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 .product-descr {
-  text-align: left;
-  font-size: 1rem;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
+.product-img {
+  width: 100%;
+  aspect-ratio : 1 / 1;
+  background-color: rgb(235, 235, 237);
+}
+
+.centered {
+  text-align: center; 
+}
+
+.inline-link, .inline-link:visited {
+  color: skyblue;
+}
 
 /* tablets screens */
 @media screen and (min-width: 600px) {
@@ -129,13 +164,20 @@ picture {
   }
 
   .product {
-    width: 25vw;
-    height: 25vw;
+    width: 40%;
+  }
+
+  .product-name {
+    font-size: 1.6rem;
   }
 }
  
 /* laptops/desktops screens */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
+  section {
+    margin-top: 140px;
+  }
+
   #title-logo {
     display: block;
     float: left;
@@ -150,7 +192,6 @@ picture {
   }
 
   .product {
-    /* width: 20vw; */
-    /* height: 2vw; */
+    width: 30%;
   }
 }
